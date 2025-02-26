@@ -1,11 +1,17 @@
+function alternarModo(modo,cor){
+    document.body.style.backgroundColor = cor;
+    document.querySelectorAll(".modos button").forEach(btn => btn.classList.remove("ativo"));
+    document.getElementById(modo).classList.add("ativo");
+}
+
 document.querySelector("#foco").addEventListener("click",function(){
-    document.body.style.backgroundColor = "#cc6666"
+    alternarModo("foco","#cc6666");
 });
 
 document.querySelector("#pausa-curta").addEventListener("click",function(){
-    document.body.style.backgroundColor = "#66cccc"
+    alternarModo("pausa-curta","#66cccc")
 });
 
 document.querySelector("#pausa-longa").addEventListener("click",function(){
-    document.body.style.backgroundColor = "#66cc99"
+    alternarModo("pausa-longa","#66cc99")
 });
