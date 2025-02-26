@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -8,32 +8,70 @@ body{
     background-color: #cc6666;
 }
 
-.container{
-    background-color: white;
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 22px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 300px;
 }
 
-.botoes{
-    margin-top: 10px;
+.timer {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
-.modos button{
+.botoes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.modos button {
     padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: none;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+
+.modos button.active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-start {
+    padding: 15px 20px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 120px;
+    transition: background-color 0.3s;
+}
+
+.btn-start:hover {
+    background-color: #f0f0f0;
+}
+
+.botoes button {
+    padding: 8px 12px;
     margin: 5px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     background: none;
-}
-
-.botoes button{
-    padding: 10px 15px;
-    margin: 5px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+    font-size: 18px;
 }
